@@ -9,7 +9,7 @@ Welcome to the **Educational Institution Website** repository! This project is a
 ### 🌐 Screenshots
 
 Here's a sneak peek of what the website looks like:
-![Educational Institution Website](./public/preview.png)
+![Educational Institution Website](../Arsh-Gurukul-Website//public/Preview%20(2).png)
 
 ### 🛠️ Tech Stack
 
