@@ -5,10 +5,9 @@ import "./TextBox.css";
 const TextBox = () => {
   return (
     <div className="text-box">
-      <h1>World&apos;s Biggest University</h1>
+      <h1>🌿 Welcome to the Gurukul</h1>
       <p>
-        Making website is now one of the easiest thing in the world. You just
-        need to learn HTML, CSS, <br /> JavaScript and you are good to go.
+        Our mission is to revive the essence of ancient education through holistic learning <br /> where discipline, wisdom, and spirituality converge to shape extraordinary lives. <br /> 🕉️ Vidya Dadati Vinayam — Knowledge brings humility.
       </p>
       <Link to="/" className="hero-btn">
         Visit us To Know More

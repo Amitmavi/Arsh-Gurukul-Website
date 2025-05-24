@@ -16,11 +16,10 @@ const Testimonials = () => {
           <img src="/images/user1.jpg" alt="" />
           <div>
             <p>
-              &quot;The educational journey here is truly transformative. A
-              nurturing environment that fosters both personal and academic
-              growth.&quot;
+              &quot;Studying at this Gurukul has been a life-changing experience. Here, I learned not just subjects, 
+              but the values of discipline, respect, and self-awareness. I feel more confident and focused than ever before.&quot;
             </p>
-            <h3>Christine Berkley</h3>
+            <h3>Amit Gurjar</h3>
             <div className="stars">
               {[...Array(4)].map((_, i) => (
                 <FontAwesomeIcon
@@ -38,11 +37,10 @@ const Testimonials = () => {
           <img src="/images/user2.jpg" alt="" />
           <div>
             <p>
-              &quot; This institutional goes beyond education; it&apos;s a
-              community that nurtures creativity and critical thinking. Truly
-              exceptional! &quot;
+              &quot; From yoga in the mornings to interactive classes during the day, 
+              every part of this journey has been enriching. I learned to think deeply, act wisely, and live peacefully. &quot;
             </p>
-            <h3>David Byer</h3>
+            <h3>Anuj Kumar</h3>
             <div className="stars">
               {[...Array(5)].map((_, i) => (
                 <FontAwesomeIcon

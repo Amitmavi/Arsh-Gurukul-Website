@@ -12,23 +12,23 @@ const ContactComponent = () => {
             <div>
               <FontAwesomeIcon icon={faHome} className="icon" />
               <span>
-                <h5>GT Road, Gulzar Group Of Institutes</h5>
-                <p>Ludhiana, Punjab, IN</p>
+                <h5>College, Rampur Garden.</h5>
+                <p> Bareilly, Uttar Pradesh 243005</p>
               </span>
             </div>
 
             <div>
               <FontAwesomeIcon icon={faPhone} className="icon" />
               <span>
-                <h5>+91 6262172262</h5>
-                <p>Monday to Saturday, 10AM to 6PM</p>
+                <h5>+91 8532004875</h5>
+                <p>Monday to Saturday, 10AM to 4PM</p>
               </span>
             </div>
 
             <div>
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
               <span>
-                <h5>info@eduford.com</h5>
+                <h5>info@amit.com</h5>
                 <p>Email us Your query</p>
               </span>
             </div>
