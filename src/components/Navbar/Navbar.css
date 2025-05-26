@@ -1,37 +1,62 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 nav {
   padding: 2% 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-nav img {
-  width: 150px;
-}
-
+/* Nav Links Container */
 .nav-links {
   flex: 1;
   text-align: right;
 }
 
+/* Remove default list padding and margin */
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Items */
 .nav-links ul li {
   display: inline-block;
   list-style: none;
-  padding: 8px 12px;
+  padding: 0 12px;
   position: relative;
 }
 
-.nav-links ul li a {
+/* Links & Dropdown buttons */
+.nav-links ul li a,
+.dropbtn {
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
+/* Hover effect for links and buttons */
+.nav-links ul li a:hover,
+.dropbtn:hover {
+  color: #00e0ff;
+}
+
+/* Underline effect on hover for nav items */
 .nav-links ul li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #00e0ff;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -41,37 +66,149 @@ nav img {
   width: 100%;
 }
 
+/* Hide hamburger icon on desktop */
 nav .fas {
   display: none;
+  cursor: pointer;
 }
 
-/* Responsive style for smaller screens */
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Dropdown arrow icon styling */
+.dropdown-arrow {
+  font-size: 0.7rem;
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow if dropdown is open */
+.dropdown-content.show + .dropbtn .dropdown-arrow,
+.dropbtn[aria-expanded="true"] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e2a38;
+  min-width: 180px;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Dropdown menu items */
+.dropdown-content li {
+  list-style: none;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover style for dropdown items */
+.dropdown-content li a:hover {
+  
+  color: #141e30;
+}
+
+/* Show dropdown when toggled */
+.dropdown-content.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop: Show dropdown on hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+}
+
+/* Responsive styling */
 @media (max-width: 768px) {
+  /* Make nav items stack vertically */
   .nav-links ul li {
     display: block;
+    text-align: left;
+    padding: 8px 0;
   }
 
+  /* Sidebar nav */
   .nav-links {
     position: fixed;
-    background: #f44336;
+    background: #243b55;
     height: 100vh;
     width: 200px;
     top: 0;
     right: -200px;
     text-align: left;
-    z-index: 2;
-    transition: 0.3s;
+    z-index: 99;
+    transition: right 0.3s ease;
+    padding-top: 60px;
+    overflow-y: auto;
   }
 
+  /* Hamburger icon shown */
   nav .fas {
     display: block;
     color: #fff;
     margin: 10px;
     font-size: 22px;
-    cursor: pointer;
   }
 
+  /* Padding inside nav list */
   .nav-links ul {
-    padding: 30px;
+    padding: 30px 15px;
+  }
+
+  /* Dropdown menu inside sidebar */
+  .dropdown-content {
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding-left: 15px;
+    display: none;
+  }
+
+  /* Show dropdown inside sidebar */
+  .dropdown-content.show {
+    display: block;
+  }
+
+  /* Dropdown links in sidebar */
+  .dropdown-content li a {
+    color: #fff;
+    padding: 8px 0;
+  }
+
+  /* Remove underline for sidebar */
+  .nav-links ul li::after {
+    display: none;
   }
 }

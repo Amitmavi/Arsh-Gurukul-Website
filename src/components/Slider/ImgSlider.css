@@ -1,0 +1,55 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Make all images same height: 40% of viewport */
+
+ .slide-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center center; /* keep image centered */
+  display: block;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+}
+
+/* Navigation arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+/* Mobile-friendly design */
+@media screen and (max-width: 768px) {
+  .slide-img {
+    height: 30vh;  /* ✅ Slightly shorter on mobile */
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+}

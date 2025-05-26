@@ -1,12 +1,13 @@
-import Subheader from "../components/Subheader/Subheader";
+
 import Location from "../components/Location/Location";
 import ContactComponent from "../components/ContactComponent/ContactComponent";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 
 const Contact = () => {
   return (
     <>
-      <Subheader header="Contact Us" />
+      <Navbar />
       <Location />
       <ContactComponent />
       <Footer />
