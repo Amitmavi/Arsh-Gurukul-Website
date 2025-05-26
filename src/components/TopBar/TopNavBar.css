@@ -21,7 +21,7 @@
   height: auto;
   max-height: 80px;
   width: 100%;
-  max-width: 220px; /* Limit size on small screens */
+  max-width: 520px; /* Limit size on small screens */
   object-fit: contain;
 }
 
@@ -98,7 +98,7 @@
   .buttonGroup {
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .button {

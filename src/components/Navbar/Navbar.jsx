@@ -100,6 +100,8 @@ const Navbar = () => {
 
           <li><Link to="/academic">ACADEMIC</Link></li>
 
+          <li><Link to="/donation">Donation</Link></li>
+
           <DropdownMenu
             title="FACULTY"
             name="faculty"
@@ -118,8 +120,7 @@ const Navbar = () => {
             toggleDropdown={toggleDropdown}
             links={[
               { path: "/gallery/image", label: "Image Gallery" },
-              { path: "/gallery/media", label: "Media Gallery" },
-              { path: "/gallery/natural-farming", label: "Natural Farming Gallery" },
+             
             ]}
           />
 

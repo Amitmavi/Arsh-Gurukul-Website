@@ -19,7 +19,7 @@ function TopNavBar() {
       <div className="buttonGroup">
         <button className="button student">Student App</button>
         <button className="button parent">Parent Login</button>
-        <button className="button pay">Pay Online Fees</button>
+        <button className="button pay">Donation</button>
       </div>
     </div>
   );

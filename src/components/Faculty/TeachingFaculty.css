@@ -1,0 +1,91 @@
+.faculty-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.faculty-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-info {
+  flex: 1;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.faculty-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.faculty-info p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.faculty-info a {
+  color: #1a237e;
+  text-decoration: none;
+}
+
+.faculty-info a:hover {
+  text-decoration: underline;
+}
+
+.faculty-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .faculty-card {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .faculty-info {
+    text-align: center;
+  }
+
+  .faculty-photo {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+  }
+}
