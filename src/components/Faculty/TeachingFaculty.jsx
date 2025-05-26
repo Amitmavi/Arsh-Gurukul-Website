@@ -42,7 +42,7 @@ const facultyData = [
 function TeachingFaculty() {
   return (
     <div className="faculty-container">
-      <h2 className="faculty-heading">👩‍🏫 Teaching Faculty</h2>
+      <h2 className="faculty-heading"> Teaching Faculty</h2>
       <div className="faculty-grid">
         {facultyData.map((faculty, index) => (
           <div className="faculty-card" key={index}>

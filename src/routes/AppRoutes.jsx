@@ -7,10 +7,12 @@ import Course from "../pages/Course";
 
 
 
+
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />     
+      <Route path="/" element={<Home />} />
+           
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />     
       <Route path="/course" element={<Course />} />
