@@ -1,76 +1,78 @@
-/* Full page layout */
-.mission-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-  background: linear-gradient(to right, #f1f5f9, #e2e8f0);
+/* Importing a trendy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-}
+  padding: 3rem 1rem;
 
-/* Top heading */
-.mission-welcome {
+  font-family: 'Inter', sans-serif;
   text-align: center;
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #1e3a8a;
-  margin-bottom: 2rem;
+  color: #333;
 }
 
-/* Section cards */
-.mission-section {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
-  margin-bottom: 2rem;
+/* Main Title */
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff5722, #ff9800);
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  margin-bottom: 3rem;
 }
 
-/* Section headings */
-.mission-heading {
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background: #fb8c00;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+/* Section Styles */
+.plain-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.section-heading {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #e65100;
+  position: relative;
   margin-bottom: 1rem;
-  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
-/* Description text */
-.mission-text {
-  font-size: 1.1rem;
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 100px;
+  background-color: #ff9800;
+  border-radius: 2px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: 1.8;
-  color: #374151;
-  text-align: justify;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .mission-welcome {
-    font-size: 2.2rem;
-  }
-
-  .mission-heading {
-    font-size: 1.6rem;
-  }
-
-  .mission-text {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .mission-container {
-    padding: 2rem 1rem;
-  }
-
-  .mission-welcome {
-    font-size: 1.8rem;
-  }
-
-  .mission-heading {
-    font-size: 1.4rem;
-  }
-
-  .mission-text {
-    font-size: 0.95rem;
-  }
+  font-family: 'Inter', sans-serif;
 }

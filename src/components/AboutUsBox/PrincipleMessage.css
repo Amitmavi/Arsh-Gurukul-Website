@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background: linear-gradient(to right, #fdfdfd, #fff8e1);
+}
+
+/* Outer Container */
+.principal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+/* Card Content */
+.principal-card {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  max-width: 1060px;
+  width: 100%;
+}
+
+/* Heading */
+.principal-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #bf360c;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Paragraphs */
+.principal-text {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Signature */
+.principal-signature {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #4e342e;
+  line-height: 1.7;
+}

@@ -1,0 +1,18 @@
+/* UL Values List */
+.values-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 2;
+}
+
+.values-list li {
+  margin-bottom: 1.2rem;
+}
+
+.values-list strong {
+  color: #1e293b;
+  font-weight: 600;
+}

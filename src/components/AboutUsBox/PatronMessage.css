@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background: linear-gradient(to right, #f1f5f9, #e2e8f0);
+}
+
+/* Full width section wrapper */
+.aim-wrapper {
+  background: linear-gradient(to right, #f1f5f9, #e2e8f0);
+  padding: 3rem 1rem 2rem; /* Adds top gap */
+  margin: 0;
+  width: 100%;
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full-width card with internal max-width */
+.aim-card {
+  width: 100%;
+  max-width: 1200px;       /* Keeps content readable on large screens */
+  margin: 0 auto;          /* Center the card */
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  color: #374151;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
+}
+
+/* Heading */
+.aim-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #bf360c;
+  margin-bottom: 1.8rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Quote line style */
+.quote-line {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #bf360c;
+  margin-bottom: 2rem;
+}
+
+/* Description paragraphs */
+.aim-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #4b4b4b;
+}
+
+/* Strong text inside description */
+.aim-description strong {
+  font-weight: 600;
+  color: #bf360c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aim-heading {
+    font-size: 2.3rem;
+  }
+
+  .aim-card {
+    padding: 2rem 2rem;
+    font-size: 1.05rem;
+  }
+
+  .quote-line {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aim-heading {
+    font-size: 1.8rem;
+  }
+
+  .aim-card {
+    padding: 1.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .quote-line {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+}

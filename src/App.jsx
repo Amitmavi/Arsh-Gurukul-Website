@@ -1,11 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import AppRoutes from "./routes/AppRoutes";
-import ImgSlider from "./components/Slider/ImgSlider";
-import TopNavBar from "./components/TopBar/TopNavBar";
+
 import OurFounders from "./pages/About/OurFounders";
 import Aim from "./pages/About/Aim";
-import Navbar from "./components/Navbar/Navbar";
+
 import Value from "./pages/About/Value";
 import Committee from "./pages/About/Committee";
 import Patron from "./pages/About/Patron";
@@ -29,13 +28,13 @@ import AdmistrativeStaffs from "./pages/Faculty/AdmistrativeStaffs";
 import Gallarys from "./pages/Gallary/Gallarys";
 
 
+
 const App = () => {
   return (
     <Router>
-      <TopNavBar />
+      
       <AppRoutes />
-      <Navbar />
-      <ImgSlider />
+      
       <Routes>
         <Route path="/about/our-founders" element={<OurFounders />} />
         <Route path="/about/our-aim" element={<Aim />} /> 
