@@ -5,7 +5,7 @@ const WelcomeVision = () => {
   return (
     <div className="welcome-wrapper">
       <section className="hero-section">
-        <h1 className="hero-title">Welcome To Gurukul Kurukshetra</h1>
+        <h1 className="hero-title">Welcome To Gurukul Sambhli Karnal</h1>
       </section>
 
       <section className="plain-section">

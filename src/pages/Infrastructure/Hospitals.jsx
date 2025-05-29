@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Hospital from "../../components/Infrastructure/Hospital"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -11,6 +12,7 @@ function Hospitals() {
       <Navbar />
       <ImgSlider />
       <Hospital />
+      <Footer />
     </div>
   )
 }

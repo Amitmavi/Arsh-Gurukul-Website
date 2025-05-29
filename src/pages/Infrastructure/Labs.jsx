@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Lab from "../../components/Infrastructure/Lab"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -10,6 +11,7 @@ function Labs() {
       <Navbar />
       <ImgSlider />
       <Lab />
+      <Footer />
     </div>
   )
 }

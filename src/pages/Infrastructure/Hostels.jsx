@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Hostel from "../../components/Infrastructure/Hostel"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -11,6 +12,7 @@ function Hostels() {
       <Navbar />
       <ImgSlider />
       <Hostel />
+      <Footer />
     </div>
   )
 }

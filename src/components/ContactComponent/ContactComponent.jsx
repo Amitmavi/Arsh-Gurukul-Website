@@ -1,53 +1,70 @@
 import "./ContactComponent.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faHome, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ContactComponent = () => {
   return (
-    <>
-      <section className="contact-us">
-        <div className="row">
-          <div className="contact-col">
-            <div>
-              <FontAwesomeIcon icon={faHome} className="icon" />
-              <span>
-                <h5>College, Rampur Garden.</h5>
-                <p> Bareilly, Uttar Pradesh 243005</p>
-              </span>
-            </div>
+    <section className="contact-us">
+      <h2 className="contact-title">Contact Us</h2>
+      <p className="contact-subtitle">Lets Get in Touch.</p>
 
-            <div>
-              <FontAwesomeIcon icon={faPhone} className="icon" />
-              <span>
-                <h5>+91 8532004875</h5>
-                <p>Monday to Saturday, 10AM to 4PM</p>
-              </span>
-            </div>
+      <div className="row">
+        {/* Contact Info */}
+        <div className="contact-col contact-info">
+          <h3>Contact Info</h3>
 
+          <div className="info-item">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
             <div>
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              <span>
-                <h5>info@amit.com</h5>
-                <p>Email us Your query</p>
-              </span>
+              GURUKUL KURUKSHETRA<br />
+              Near III Gate Kurukshetra,<br />
+              University Kurukshetra,<br />
+              Haryana 136119
             </div>
           </div>
 
-          <div className="contact-col">
-            <form action="">
-              <input type="text" placeholder="Enter your name" required />
-              <input type="email" placeholder="Enter email address" required />
-              <input type="text" placeholder="Enter your subject" required />
-              <textarea rows="8" placeholder="Message" required></textarea>
-              <button type="submit" className="hero-btn red-btn">
-                Send Message
-              </button>
-            </form>
+          <div className="info-item">
+            <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            <div>gurukul_kkr@yahoo.com</div>
+          </div>
+
+          <div className="info-item">
+            <FontAwesomeIcon icon={faPhone} className="icon" />
+            <div>
+              +91-9996026311<br />
+              01744-238048<br />
+              01744-238648
+            </div>
+          </div>
+
+          <div className="follow-on">
+            <strong>Follow on:</strong> Instagram | Facebook | Twitter | YouTube
           </div>
         </div>
-      </section>
-    </>
+
+        {/* Contact Form */}
+        <div className="contact-col contact-form">
+          <form action="">
+            <label htmlFor="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+
+            <label htmlFor="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter your phone number" required />
+
+            <label htmlFor="email">Email</label>
+            <input id="email" type="email" placeholder="Enter email address" required />
+
+            <label htmlFor="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Your message" required></textarea>
+
+            <button type="submit" className="hero-btn red-btn">
+              Send Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 };
 

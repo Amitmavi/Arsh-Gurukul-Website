@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Gallary from "../../components/Gallary/Gallary"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -11,6 +12,7 @@ function Gallarys() {
       <Navbar />
       <ImgSlider />
       <Gallary />
+      <Footer />
     </div>
   )
 }

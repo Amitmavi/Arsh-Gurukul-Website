@@ -1,30 +1,133 @@
-/* Footer section styles */
 .footer {
+  background: #004d40;
+  color: #e0f1f1;
+  padding: 25px 20px 15px;  /* reduced top & bottom padding */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;               /* smaller gap */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 -6px 20px rgba(0, 77, 64, 0.5);
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+  padding-bottom: 10px;   /* optional to add spacing between sections */
+}
+
+/* Part 1 - Logo and contact */
+.footer-logo {
+  width: 80px;           /* slightly smaller logo */
+  margin-bottom: 10px;   /* less margin */
+  border-radius: 50%  ;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.footer-contact address {
+  font-style: normal;
+  line-height: 1.3;       /* tighter line height */
+  font-size: 0.9rem;      /* slightly smaller font */
+  color: #b2dfdb;
+}
+
+.footer-contact address a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+.footer-contact address a:hover {
+  text-decoration: underline;
+}
+
+/* Part 2 - Links */
+.footer-links h4,
+.footer-social h4,
+.footer-map h4 {
+  margin-bottom: 15px;    /* less margin */
+  font-size: 1.2rem;      /* slightly smaller */
+  font-weight: 700;
+  color: #a7ffeb;
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;    /* reduce list item spacing */
+}
+
+.footer-links ul li a {
+  color: #b2dfdb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Part 3 - Social */
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;             /* reduce gap between icons */
+}
+
+.footer-social .social-icons a {
+  font-size: 1.4rem;      /* smaller icons */
+  color: #b2dfdb;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+/* Part 4 - Map */
+.footer-map .map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  height: 150px;           /* smaller map height */
+}
+
+/* Bottom text */
+.footer-bottom {
   width: 100%;
   text-align: center;
-  padding: 30px 8%;
-}
-
-.footer h4 {
-  margin-bottom: 25px;
-  margin-top: 20px;
-  font-size: 1.4rem;
+  margin-top: 20px;       /* less margin */
+  font-size: 0.95rem;     /* smaller font */
+  color: #80cbc4;
   font-weight: 600;
+  border-top: 1px solid #00796b;
+  padding-top: 10px;      /* reduced padding */
 }
 
-.footer p {
-  font-size: 1.2rem;
+.footer-bottom .heart {
+  color: #e91e63;
+  margin: 0 4px;
+  font-size: 1.1rem;
 }
 
-.footer .icons .fab {
-  color: #f44336;
-  margin: 0 13px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding: 18px 0;
-}
+/* Responsive */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px 15px 15px;
+  }
 
-.fa-heart {
-  color: #f44336;
-  font-size: 1.2rem;
+  .footer-section {
+    min-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .footer-logo {
+    margin: 0 auto 15px;
+    display: block;
+    width: 80px;
+  }
 }

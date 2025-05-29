@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Transport from "../../components/Infrastructure/Transport"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -10,6 +11,7 @@ function Transports() {
       <Navbar />
       <ImgSlider />
       <Transport />
+      <Footer />
     </div>
   )
 }

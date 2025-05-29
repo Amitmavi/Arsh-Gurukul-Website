@@ -1,4 +1,5 @@
 
+import Footer from '../../components/Footer/Footer'
 import Sport from '../../components/Infrastructure/Sport'
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -11,6 +12,7 @@ function Sports() {
       <Navbar />
       <ImgSlider />
       <Sport />
+      <Footer />
     </div>
   )
 }

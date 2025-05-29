@@ -1,45 +1,98 @@
-import "./Footer.css";
+
+import "../Footer/Footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faTwitter,
   faInstagram,
-  faLinkedinIn,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <section className="footer">
-      <h4>About Us</h4>
-      <p>
-      Committed to preserving the ancient spirit of learning, our Gurukul stands as a sacred place where
-       knowledge is not just taught but experienced. We believe in holistic education — one that shapes the body, mind, and soul.
-
-       Our mission is to awaken the inner potential of every student through the timeless teachings of the Vedas, 
-       the discipline of daily practice, and the guidance of enlightened mentors. Here, 
-       learning is not confined to books but embedded in every aspect of life — from moral values and meditation to science, art, and culture.
-
-      In a nurturing environment filled with devotion and discipline, 
-      we cultivate curiosity, foster character, and empower students to become wise, compassionate, and responsible individuals.
-      <br /> Join us in a journey where tradition meets transformation — where education is a sacred path, not just a destination.
-
-
-      </p>
-
-      <div className="icons">
-        <FontAwesomeIcon icon={faFacebookF} className="fab" />
-        <FontAwesomeIcon icon={faTwitter} className="fab" />
-        <FontAwesomeIcon icon={faInstagram} className="fab" />
-        <FontAwesomeIcon icon={faLinkedinIn} className="fab" />
+    <footer className="footer">
+      {/* Part 1: Logo and Contact Info */}
+      <div className="footer-section footer-contact">
+        <img
+          src="/images/Logo.jpeg" // Replace with your logo path
+          alt="Gurukul Logo"
+          className="footer-logo"
+        />
+        <address>
+          Gurukul Kurukshetra,<br />
+          Near III Gate Kurukshetra,<br />
+          University Kurukshetra,<br />
+          Haryana 136119<br />
+          <br />
+          Phone: +91-9996026311<br />
+          Landline: 01744-238048, 01744-238648<br />
+          <br />
+          Email: <a href="mailto:gurukul_kkr@yahoo.com">gurukul_kkr@yahoo.com</a>,<br />
+          <a href="mailto:kurukshetragurukul@gmail.com">kurukshetragurukul@gmail.com</a><br />
+          <br />
+          Website: <a href="https://gurukulkurukshetra.com" target="_blank" rel="noreferrer">gurukulkurukshetra.com</a><br />
+          <br />
+          No. of Visitors: <strong>415,982</strong>
+        </address>
       </div>
 
-      <p>
-        Made with <FontAwesomeIcon icon={faHeart} className="fa-heart" /> by Amit Gurjar
-      </p>
-    </section>
+      {/* Part 2: Page Links */}
+      <div className="footer-section footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/admission/procedure">Admission Procedure</a></li>
+          <li><a href="/admission/fee-structure">Fee Structure</a></li>
+          <li><a href="/infrastructure/labs">Infrastructure</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      {/* Part 3: Social Media */}
+      <div className="footer-section footer-social">
+        <h4>Follow Us</h4>
+        <div className="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+        </div>
+      </div>
+
+      {/* Part 4: Map */}
+      <div className="footer-section footer-map">
+        <h4>Our Location</h4>
+        <div className="map-container">
+          <iframe
+            title="Gurukul Kurukshetra Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.1670552548476!2d79.42518677494651!3d28.353798596684765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0072b03e53e71%3A0x27841529cd474cbc!2sBareilly%20College!5e0!3m2!1sen!2sin!4v1748059152181!5m2!1sen!2sin"
+            width="100%"
+            height="150"
+            style={{ border: 0, borderRadius: "12px" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom">
+        <p>
+          Made with <span className="heart">❤️</span> by Amit Gurjar
+        </p>
+      </div>
+    </footer>
   );
 };
 

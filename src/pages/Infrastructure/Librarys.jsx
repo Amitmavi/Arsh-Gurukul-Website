@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Library from "../../components/Infrastructure/Library"
 import Navbar from "../../components/Navbar/Navbar"
 import ImgSlider from "../../components/Slider/ImgSlider"
@@ -10,6 +11,7 @@ function Librarys() {
       <Navbar />
       <ImgSlider />
       <Library />
+      <Footer />
     </div>
   )
 }

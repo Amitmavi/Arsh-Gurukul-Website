@@ -1,91 +1,55 @@
-.faculty-container {
-  padding: 30px;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-.faculty-heading {
+.alumni-wrapper {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  min-height: 100vh;
   text-align: center;
-  font-size: 2rem;
-  color: #1a237e;
-  margin-bottom: 30px;
-  font-weight: 700;
+  font-family: Arial, sans-serif;
 }
 
-.faculty-grid {
+.alumni-heading {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.alumni-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.faculty-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  padding: 20px;
-  transition: transform 0.3s ease;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.faculty-card:hover {
-  transform: translateY(-5px);
+.alumni-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.faculty-info {
-  flex: 1;
-  text-align: left;
-  font-size: 0.95rem;
+.alumni-card:hover {
+  transform: translateY(-8px);
 }
 
-.faculty-info h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.faculty-info p {
-  margin: 6px 0;
-  color: #555;
-}
-
-.faculty-info a {
-  color: #1a237e;
-  text-decoration: none;
-}
-
-.faculty-info a:hover {
-  text-decoration: underline;
-}
-
-.faculty-photo {
-  width: 120px;
-  height: 120px;
+.alumni-img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ddd;
+  border: 3px solid #83a4d4;
+  margin-bottom: 15px;
 }
 
-/* Responsive design for mobile */
-@media (max-width: 600px) {
-  .faculty-card {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+.alumni-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
 
-  .faculty-info {
-    text-align: center;
-  }
-
-  .faculty-photo {
-    margin-top: 15px;
-    width: 100px;
-    height: 100px;
-  }
+.alumni-percentage {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
 }

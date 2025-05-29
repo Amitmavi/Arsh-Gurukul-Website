@@ -1,0 +1,76 @@
+.academic-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 25px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.academic-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #004d40;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.academic-container p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.section-list,
+.exam-list {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.section-list li,
+.exam-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #2e2e2e;
+}
+
+.section-list li strong {
+  color: #00796b;
+}
+
+.note {
+  background-color: #e0f2f1;
+  padding: 15px 20px;
+  border-left: 5px solid #00796b;
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 40px auto 0;
+  border-radius: 6px;
+  color: #004d40;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .academic-container {
+    padding: 15px 15px;
+    margin: 20px 10px;
+  }
+
+  .academic-title {
+    font-size: 1.8rem;
+  }
+
+  .academic-container p,
+  .section-list li,
+  .exam-list li,
+  .note {
+    font-size: 0.95rem;
+  }
+
+  .note {
+    max-width: 100%;
+  }
+}
