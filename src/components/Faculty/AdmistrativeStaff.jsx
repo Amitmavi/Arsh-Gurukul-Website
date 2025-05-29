@@ -42,7 +42,7 @@ const adminStaffData = [
 function AdmistrativeStaff() {
   return (
     <div className="faculty-container">
-      <h2 className="faculty-heading">🧑 Administrative Staff</h2>
+      <h2 className="faculty-heading"> Administrative Staff</h2>
       <div className="faculty-grid">
         {adminStaffData.map((staff, index) => (
           <div className="faculty-card" key={index}>
