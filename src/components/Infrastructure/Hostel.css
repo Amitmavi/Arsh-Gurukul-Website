@@ -1,0 +1,102 @@
+.hostel-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.hostel-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hostel-header h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #66bb6a;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.hostel-header p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.hostel-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.hostel-images img {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hostel-content p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+
+.hostel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.hostel-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.hostel-card:hover {
+  transform: translateY(-5px);
+}
+
+.hostel-card h2 {
+  font-size: 1.4rem;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.hostel-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hostel-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .hostel-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .hostel-card p {
+    font-size: 0.95rem;
+  }
+}

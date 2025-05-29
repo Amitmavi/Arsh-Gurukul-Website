@@ -1,5 +1,5 @@
 
-import logo from "../../../public/images/12.png";  // adjust path as per your folder structure
+import logo from "../../../public/images/VRDDHI ARSH GURUKUL.png";  // adjust path as per your folder structure
 import "../TopBar/TopNavBar.css";
 
 function TopNavBar() {

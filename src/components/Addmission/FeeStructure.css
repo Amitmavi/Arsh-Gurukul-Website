@@ -1,0 +1,51 @@
+.fee-structure-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.fee-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fee-header h1 {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #26a69a;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.fee-content p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fee-structure-page {
+    padding: 25px 15px;
+  }
+
+  .fee-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .fee-content p {
+    font-size: 1rem;
+  }
+}

@@ -1,6 +1,7 @@
 import TopNavBar from "../TopBar/TopNavBar";
 import Navbar from "../Navbar/Navbar"
 import ImgSlider from "../Slider/ImgSlider";
+import SliderMessages from "../../pages/SliderMessages";
 
 
 
@@ -10,6 +11,7 @@ function Home() {
         <TopNavBar />
       <Navbar />
       <ImgSlider />
+      <SliderMessages />
       
     </div>
   )

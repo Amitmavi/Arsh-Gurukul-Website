@@ -1,6 +1,6 @@
 
 import '../Donation/Donate.css';
-import upiQR from '../../../public/images/Scanner.jpeg'; // Place your QR image here
+// import upiQR from '../../../public/images/Scanner.jpeg'; // Place your QR image here
 
 function Donate() {
   return (
@@ -11,16 +11,16 @@ function Donate() {
       </p>
 
       <div className="donate-info">
-        <p><strong>Account Holder Name:</strong> Anuj Kumar Singh</p>
-        <p><strong>Account Number:</strong> ********1452</p>
-        <p><strong>IFSC Code:</strong> ABCD0123456</p>
+        <p><strong>Account Holder Name:</strong> Vipanyu innovative foundation </p>
+        <p><strong>Account Number:</strong> 4062125577</p>
+        <p><strong>IFSC Code:</strong> SBIN0004716</p>
         <p><strong>Bank Name:</strong> State Bank of India</p>
       </div>
 
-      <div className="qr-section">
+      {/* <div className="qr-section">
         <p><strong>Scan this UPI QR to Donate:</strong></p>
         <img src={upiQR} alt="UPI QR Code" className="qr-image" />
-      </div>
+      </div> */}
 
       <p className="thank-you">🙏 Thank you for supporting Gurukul 🙏</p>
     </div>

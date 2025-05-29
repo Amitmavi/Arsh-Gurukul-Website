@@ -13,6 +13,7 @@ function OurFounders() {
         <TopNavBar />
       <Navbar />
       <ImgSlider />
+      
         <OurFounder />
         <Footer />
     </div>

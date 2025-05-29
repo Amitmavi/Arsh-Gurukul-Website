@@ -11,6 +11,7 @@ function DirectorMessages() {
       <TopNavBar />
       <Navbar />
       <ImgSlider />
+      
       <DirectorMessage />
       <Footer />
     </div>

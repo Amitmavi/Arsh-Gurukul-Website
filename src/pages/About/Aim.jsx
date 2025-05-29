@@ -11,6 +11,7 @@ function Aim() {
       <TopNavBar />
       <Navbar />
       <ImgSlider />
+      
       <OurAim />
       <Footer />
     </div>

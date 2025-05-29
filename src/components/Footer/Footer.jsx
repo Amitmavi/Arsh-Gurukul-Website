@@ -21,18 +21,18 @@ const Footer = () => {
           className="footer-logo"
         />
         <address>
-          Gurukul Kurukshetra,<br />
-          Near III Gate Kurukshetra,<br />
-          University Kurukshetra,<br />
-          Haryana 136119<br />
+          वृद्धि आर्ष गुरुकुल विद्यापीठ ,<br />
+          साम्भली- निसिंग रोड, साम्भली ,<br />
+          करनाल, हरियाणा ,<br />
+          
           <br />
-          Phone: +91-9996026311<br />
+          Phone: +91-8273316132<br />
           Landline: 01744-238048, 01744-238648<br />
           <br />
           Email: <a href="mailto:gurukul_kkr@yahoo.com">gurukul_kkr@yahoo.com</a>,<br />
-          <a href="mailto:kurukshetragurukul@gmail.com">kurukshetragurukul@gmail.com</a><br />
+          <a href="mailto:arshgurukul@gmail.com">mailto:arshgurukul@gmail.com</a><br />
           <br />
-          Website: <a href="https://gurukulkurukshetra.com" target="_blank" rel="noreferrer">gurukulkurukshetra.com</a><br />
+          Website: <a href="https://gurukularsh.com" target="_blank" rel="noreferrer">gurukulArsh.com</a><br />
           <br />
           No. of Visitors: <strong>415,982</strong>
         </address>
@@ -42,11 +42,11 @@ const Footer = () => {
       <div className="footer-section footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/about-us">About Us</a></li>
-          <li><a href="/admission/procedure">Admission Procedure</a></li>
-          <li><a href="/admission/fee-structure">Fee Structure</a></li>
-          <li><a href="/infrastructure/labs">Infrastructure</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li>About Us</li>
+          <li>Admission Procedure</li>
+          <li>Fee Structure</li>
+          <li>Infrastructure</li>
+          <li>Contact Us</li>
         </ul>
       </div>
 

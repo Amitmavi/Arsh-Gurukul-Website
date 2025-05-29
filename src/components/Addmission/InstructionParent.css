@@ -1,0 +1,52 @@
+.instruction-parent-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #fefefe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.8;
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+}
+
+.instruction-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.instruction-header h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #66bb6a;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.instruction-content p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instruction-parent-page {
+    padding: 25px 15px;
+  }
+
+  .instruction-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .instruction-content p {
+    font-size: 1rem;
+  }
+}
