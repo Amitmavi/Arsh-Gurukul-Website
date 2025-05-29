@@ -1,4 +1,4 @@
-import "../Infrastructure/HOstel.css";
+import "../Infrastructure/Hostel.css";
 
 function Hostel() {
   return (
