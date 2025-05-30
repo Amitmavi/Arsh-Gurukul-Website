@@ -1,4 +1,4 @@
-/* Importing a trendy Google Font */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap');
 
 * {
@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Wrapper for entire content */
 .welcome-wrapper {
   display: flex;
   flex-direction: column;
@@ -14,19 +21,17 @@
   align-items: center;
   min-height: 100vh;
   padding: 3rem 1rem;
-
-  font-family: 'Inter', sans-serif;
   text-align: center;
-  color: #333;
 }
 
-/* Main Title */
+/* Hero Section */
 .hero-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
   background: linear-gradient(to right, #ff5722, #ff9800);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   position: relative;
   margin-bottom: 3rem;
@@ -40,23 +45,26 @@
   background: #fb8c00;
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Section Styles */
+/* Sections like Vision, Mission, Messages */
 .plain-section {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 2rem auto;
   text-align: left;
+  padding: 0 1rem;
 }
 
+/* Section headings */
 .section-heading {
   font-size: 2rem;
   font-weight: 700;
   color: #e65100;
-  position: relative;
-  margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .section-heading::after {
@@ -74,5 +82,122 @@
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.8;
-  font-family: 'Inter', sans-serif;
+}
+
+/* Grid layout for all message cards */
+.messages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Each message card */
+.message-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff8f1;
+  border-left: 4px solid #ff9800;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(255, 152, 0, 0.1);
+  gap: 1.5rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Text content inside message */
+.message-content {
+  flex: 1;
+}
+
+.message-content h3 {
+  font-size: 1.3rem;
+  color: #d84315;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.message-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Read More button */
+.read-more-btn {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Right-side image */
+.message-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-text {
+    font-size: 1.1rem;
+  }
+
+  .message-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .message-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .message-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .read-more-btn {
+    width: 100%;
+    text-align: center;
+  }
 }

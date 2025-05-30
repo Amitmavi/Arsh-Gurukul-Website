@@ -19,7 +19,7 @@ function NewsEvents() {
   return (
     <div className="news-events-container">
       <div className="section">
-        <h2 className="section-title">📌 NEWS & EVENTS</h2>
+        <h2 className="section-title">📌 NEWS </h2>
         <div className="scroll-box">
           <div className="scroll-content">
             {events.map((event, idx) => (
@@ -33,7 +33,7 @@ function NewsEvents() {
       </div>
 
       <div className="section">
-        <h2 className="section-title">📢 NATURAL FARMING EVENTS</h2>
+        <h2 className="section-title">📢 EVENTS</h2>
         <div className="scroll-box">
           <div className="scroll-content">
             {notifications.map((note, idx) => (

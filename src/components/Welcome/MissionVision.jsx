@@ -1,13 +1,15 @@
-
+import { Link } from "react-router-dom";
 import "../Welcome/MissionVision.css";
 
 const WelcomeVision = () => {
   return (
     <div className="welcome-wrapper">
+      {/* Hero Section */}
       <section className="hero-section">
         <h1 className="hero-title">Welcome To Gurukul Sambhli Karnal</h1>
       </section>
 
+      {/* Vision Section */}
       <section className="plain-section">
         <h2 className="section-heading">Our Vision</h2>
         <p className="section-text">
@@ -16,6 +18,7 @@ const WelcomeVision = () => {
         </p>
       </section>
 
+      {/* Mission Section */}
       <section className="plain-section">
         <h2 className="section-heading">Our Mission</h2>
         <p className="section-text">
@@ -27,6 +30,61 @@ const WelcomeVision = () => {
           environment to instill honor, respect and compassion in each student
           and prepare him for success throughout his life.
         </p>
+      </section>
+
+      {/* Messages Section */}
+      <section className="plain-section">
+        <h2 className="section-heading">Messages</h2>
+
+        <div className="messages-grid">
+          {/* Governor's Message */}
+          <div className="message-card">
+            <div className="message-content">
+              <h3>GOVERNOR GUJARAT & PATRON OF GURUKUL</h3>
+              <p>
+                गुरुकुल शिक्षा पद्धति व्यक्ति के अज्ञान, दुराग्रह, अहं व दंभ को दूरकर उसकी सुप्त प्रतिभा को जागृत कर ज्ञान-विज्ञान के द्वार खोलकर उसका चहुँमुखी विकास करती है। ...
+              </p>
+              <Link to="/about/president-message" className="read-more-btn">Read More</Link>
+            </div>
+            <img src="/images/1.jpg" alt="Governor" className="message-image" />
+          </div>
+
+          {/* President's Message */}
+          <div className="message-card">
+            <div className="message-content">
+              <h3>PRESIDENTS MESSAGE</h3>
+              <p>
+                संस्कारित शिक्षा की संभावनाओं में राह तलाशना अनेक समस्याओं के समाधान को संभव बनाता है। ...
+              </p>
+              <Link to="/about/president-message" className="read-more-btn">Read More</Link>
+            </div>
+            <img src="/images/1.jpg" alt="President" className="message-image" />
+          </div>
+
+          {/* Director's Message */}
+          <div className="message-card">
+            <div className="message-content">
+              <h3>DIRECTORS MESSAGE</h3>
+              <p>
+                Gurukul Kurukshetra empowers all students to excel in their chosen field. ...
+              </p>
+              <Link to="/about/director-message" className="read-more-btn">Read More</Link>
+            </div>
+            <img src="/images/1.jpg" alt="Director" className="message-image" />
+          </div>
+
+          {/* Principal's Message */}
+          <div className="message-card">
+            <div className="message-content">
+              <h3>PRINCIPALS MESSAGE</h3>
+              <p>
+                Dear Parents, With great pleasure I welcome you all to our website of Gurukul Kurukshetra. ...
+              </p>
+              <Link to="/about/principal-message" className="read-more-btn">Read More</Link>
+            </div>
+            <img src="/images/1.jpg" alt="Principal" className="message-image" />
+          </div>
+        </div>
       </section>
     </div>
   );
