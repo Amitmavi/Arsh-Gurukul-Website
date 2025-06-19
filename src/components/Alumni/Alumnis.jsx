@@ -5,43 +5,14 @@ const alumniData = [
   {
     name: "Amit Gurjar",
     percentage: "87.5%",
-    photo: "/images/Amit.jpeg",
+    // photo: "/images/Amit.jpeg",
   },
-  {
-    name: "Amit Gurjar",
-    percentage: "91.2%",
-    photo: "/images/Amit.jpeg",
+   {
+    name: "Anuj",
+    percentage: "87.5%",
+    // photo: "/images/Amit.jpeg",
   },
-  {
-    name: "Anuj kumar",
-    percentage: "89.3%",
-    photo: "/images/Anuj.jpeg",
-  },
-  {
-    name: "Amit Gurjar",
-    percentage: "93.1%",
-    photo: "/images/Amit.jpeg",
-  },
-    {
-    name: "Amit Gurjar",
-    percentage: "93.1%",
-    photo: "/images/Amit.jpeg",
-  },
-    {
-    name: "Amit Gurjar",
-    percentage: "93.1%",
-    photo: "/images/Amit.jpeg",
-  },
-    {
-    name: "Amit Gurjar",
-    percentage: "93.1%",
-    photo: "/images/Amit.jpeg",
-  },
-    {
-    name: "Amit Gurjar",
-    percentage: "93.1%",
-    photo: "/images/Amit.jpeg",
-  },
+  
 ];
 
 function Alumnis() {

@@ -1,17 +1,18 @@
 
 import "../AboutUsBox/DirectorMessage.css";
-import directorImage from "../../../public/images/1.jpg"; // Place your image in assets folder or adjust path accordingly
+import directorImage from "../../../public/images/S9.jpeg"; // Place your image in assets folder or adjust path accordingly
 
 function DirectorMessage() {
   return (
     <div className="director-wrapper">
       <div className="director-card">
         <h1 className="director-heading">DIRECTOR MESSAGE</h1>
+        <h2 className="director-heading">Dr. Sudha Arya</h2>
 
         <div className="director-content">
           <img
             src={directorImage}
-            alt="Brigadier (Dr) P K Sharma"
+            alt="Dr. Sudha arya(english,sanskrit)"
             className="director-image"
           />
           <div className="director-text">
@@ -63,7 +64,7 @@ function DirectorMessage() {
             <p className="director-signature">
               Jai Hind
               <br />
-              Brigadier (Dr) P K Sharma (Retd)
+              Dr. Sudha arya(english,sanskrit)
             </p>
           </div>
         </div>

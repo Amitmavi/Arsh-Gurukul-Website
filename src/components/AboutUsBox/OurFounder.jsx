@@ -1,10 +1,10 @@
 import "../AboutUsBox/OurFounder.css"; // You can rename or create a new CSS file if you want
 
 const founderImages = [
-  "/images/1.jpg",
-  "/images/2.jpg",
-  "/images/2.jpg",
-  "/images/2.jpg",
+  "/images/F1.png",
+  "/images/F2.png",
+  "/images/F3.jpeg",
+  "/images/F4.jpeg",
   // Add more images here if needed
 ];
 

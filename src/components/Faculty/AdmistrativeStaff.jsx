@@ -1,41 +1,28 @@
 import "../Faculty/TeachingFaculty.css"; // Reusing the same CSS for consistency
 
 const adminStaffData = [
+ {
+    name: "आदित्य आर्य",
+    designation: "गणित, विज्ञान",
+    photo: "/images/2.jpg",
+  },
   {
-    name: "Mr. Ramesh Kumar",
-    designation: "Registrar",
-    mobile: "9876543001",
+    name: "सुधीर आर्य",
+    designation: "संस्कृत साहित्य, हिंदी",
+   
     photo: "/images/1.jpg",
   },
-  {
-    name: "Ms. Sunita Joshi",
-    designation: "Office Assistant",
-    mobile: "9876543002",
-    photo: "/images/2.jpg",
+   {
+    name: "रीत जी",
+    designation: "सामाजिक विज्ञान ",
+  
+    photo: "/images/1.jpg",
   },
-  {
-    name: "Mr. Prakash Singh",
-    designation: "Clerk",
-    mobile: "9876543003",
-    photo: "/images/2.jpg",
-  },
-  {
-    name: "Mr. Prakash Singh",
-    designation: "Clerk",
-    mobile: "9876543003",
-    photo: "/images/2.jpg",
-  },
-  {
-    name: "Mr. Prakash Singh",
-    designation: "Clerk",
-    mobile: "9876543003",
-    photo: "/images/2.jpg",
-  },
-  {
-    name: "Mr. Prakash Singh",
-    designation: "Clerk",
-    mobile: "9876543003",
-    photo: "/images/2.jpg",
+   {
+    name: "आर्यवीर आर्य",
+    designation: "हिंदी व्याकरण, कला, कंप्यूटर",
+ 
+    photo: "/images/1.jpg",
   },
 ];
 

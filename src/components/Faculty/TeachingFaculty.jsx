@@ -1,42 +1,38 @@
 import "../Faculty/TeachingFaculty.css";
 
 const facultyData = [
+
+   {
+    name: " डॉ. सुधा आर्य",
+    designation: "अंग्रेजी, संस्कृत",
+   
+    photo: "/images/S9.jpeg",
+  },
   {
-    name: "Dr. A. K. Verma",
-    designation: "HOD, Computer Science",
-    mobile: "9876543210",
+    name: "आदित्य आर्य",
+    designation: "गणित, विज्ञान",
     photo: "/images/2.jpg",
   },
   {
-    name: "Ms. Pooja Sharma",
-    designation: "Assistant Professor",
-    mobile: "9876512345",
+    name: "सुधीर आर्य",
+    designation: "संस्कृत साहित्य, हिंदी",
+   
     photo: "/images/1.jpg",
   },
    {
-    name: "Ms. Pooja Sharma",
-    designation: "Assistant Professor",
-    mobile: "9876512345",
+    name: "रीत जी",
+    designation: "(सामाजिक विज्ञान )",
+  
     photo: "/images/1.jpg",
   },
    {
-    name: "Ms. Pooja Sharma",
-    designation: "Assistant Professor",
-    mobile: "9876512345",
+    name: "आर्यवीर आर्य",
+    designation: "(हिंदी व्याकरण, कला, कंप्यूटर)",
+ 
     photo: "/images/1.jpg",
   },
-   {
-    name: "Ms. Pooja Sharma",
-    designation: "Assistant Professor",
-    mobile: "9876512345",
-    photo: "/images/1.jpg",
-  },
-  {
-    name: "Ms. Pooja Sharma",
-    designation: "Assistant Professor",
-    mobile: "9876512345",
-    photo: "/images/1.jpg",
-  },
+  
+ 
 ];
 
 function TeachingFaculty() {

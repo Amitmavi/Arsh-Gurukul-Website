@@ -1,4 +1,4 @@
-/* Container & heading reuse */
+/* Container & heading */
 .faculty-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   color: #2c3e50;
 }
 
-/* Founder grid */
+/* Founder grid layout */
 .founder-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -22,26 +22,33 @@
 }
 
 /* Card for each founder */
-.founder-card {
+/* .founder-card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .founder-card:hover {
   transform: translateY(-5px);
-}
+} */
 
+/* Founder image - fully visible and responsive */
 .founder-photo {
   width: 100%;
-  aspect-ratio: 1 / 1; /* square shape */
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;             /* Prevents image from being cut */
+  object-position: center top;     /* Ensures top is visible */
   display: block;
+  padding: 10px;                   /* Optional: adds inner spacing */
+  background-color: #f8f8f8;       /* Optional: neutral background */
+  max-height: 200px;               /* Controls overall size */
+  border-bottom: 1px solid #eee;   /* Optional: separates image and text */
 }
 
-/* Description text */
+/* Description section */
 .founder-description {
   font-size: 1rem;
   line-height: 1.6;
@@ -54,7 +61,7 @@
   margin: 0 auto 3rem;
 }
 
-/* Responsive typography */
+/* Responsive styles */
 @media (max-width: 768px) {
   .faculty-heading {
     font-size: 1.75rem;
@@ -63,6 +70,10 @@
   .founder-description {
     font-size: 0.95rem;
     padding: 1rem 1.2rem;
+  }
+
+  .founder-photo {
+    max-height: 160px;
   }
 }
 
@@ -78,5 +89,9 @@
   .founder-description {
     font-size: 0.9rem;
     padding: 1rem;
+  }
+
+  .founder-photo {
+    max-height: 140px;
   }
 }

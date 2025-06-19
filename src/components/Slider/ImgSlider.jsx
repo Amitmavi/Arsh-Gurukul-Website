@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import "./ImgSlider.css";
 
 // Image imports (move images to /src/assets/images/ if possible)
-import img1 from "../../../public/images/1.jpg";
-import img2 from "../../../public/images/2.jpg";
-import img3 from "../../../public/images/3.jpeg";
-import img4 from "../../../public/images/4.png";
-import img5 from "../../../public/images/8.png";
-import img6 from "../../../public/images/18.jpg";
-import img7 from "../../../public/images/21.jpg";
+import img1 from "../../../public/images/S1.jpeg";
+import img2 from "../../../public/images/S22.jpeg";
+import img3 from "../../../public/images/S3.jpeg";
+import img4 from "../../../public/images/S44.jpeg";
+import img5 from "../../../public/images/S5.jpeg";
+import img6 from "../../../public/images/S10.jpeg";
+import img7 from "../../../public/images/S12.jpeg";
+
 
 const images = [img1, img2, img3, img4, img5, img6, img7];
 

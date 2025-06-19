@@ -26,13 +26,13 @@ const Footer = () => {
           करनाल, हरियाणा ,<br />
           
           <br />
-          Phone: +91-8273316132<br />
-          Landline: 01744-238048, 01744-238648<br />
+          Phone: +91-9871501658, 9667136238<br />
+          
           <br />
-          Email: <a href="mailto:gurukul_kkr@yahoo.com">gurukul_kkr@yahoo.com</a>,<br />
-          <a href="mailto:arshgurukul@gmail.com">mailto:arshgurukul@gmail.com</a><br />
+          Email: <a href="vriddhiarshgurukul@gmail.com">vriddhiarshgurukul@gmail.com</a><br />
+          
           <br />
-          Website: <a href="https://gurukularsh.com" target="_blank" rel="noreferrer">gurukulArsh.com</a><br />
+          {/* Website: <a href="https://gurukularsh.com" target="_blank" rel="noreferrer">gurukulArsh.com</a><br /> */}
           <br />
           No. of Visitors: <strong>415,982</strong>
         </address>
@@ -63,7 +63,7 @@ const Footer = () => {
           <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <a href="https://youtube.com/@vriddhiarshgurukul?si=BhUp13cIC3W41Z-W" target="_blank" rel="noreferrer" aria-label="YouTube">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>

@@ -9,13 +9,13 @@ function Transport() {
       </div>
 
       <div className="transport-images">
-        <img src="/images/T1.png" alt="Gurukul bus" />
-        <img src="/images/T2.png" alt="Transport vehicles" />
+        <img src="/images/T4.jpg" alt="Gurukul bus" />
+        <img src="/images/T4.jpg" alt="Transport vehicles" />
       </div>
 
       <div className="transport-content">
         <p>
-          Department of Transport Gurukul Kurukshetra has two buses, ambulance, tractor trollies, pick-up van, etc.
+          Department of Transport Arsh Gurukul  has two buses, ambulance, tractor trollies, pick-up van, etc.
         </p>
         <p>
           Both the buses are equipped with CCTV cameras and GPS.
@@ -24,7 +24,7 @@ function Transport() {
           The drivers and conductors of the buses are well trained.
         </p>
         <p>
-          Gurukul Kurukshetra uses these buses for educational tours and trips in different states of the country.
+          Gurukul Arsh uses these buses for educational tours and trips in different states of the country.
         </p>
         <p>
           Gurukul uses these buses for taking students to different programs and activities in the local area.

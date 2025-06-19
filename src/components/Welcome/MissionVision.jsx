@@ -37,17 +37,7 @@ const WelcomeVision = () => {
         <h2 className="section-heading">Messages</h2>
 
         <div className="messages-grid">
-          {/* Governor's Message */}
-          <div className="message-card">
-            <div className="message-content">
-              <h3>GOVERNOR GUJARAT & PATRON OF GURUKUL</h3>
-              <p>
-                गुरुकुल शिक्षा पद्धति व्यक्ति के अज्ञान, दुराग्रह, अहं व दंभ को दूरकर उसकी सुप्त प्रतिभा को जागृत कर ज्ञान-विज्ञान के द्वार खोलकर उसका चहुँमुखी विकास करती है। ...
-              </p>
-              <Link to="/about/president-message" className="read-more-btn">Read More</Link>
-            </div>
-            <img src="/images/1.jpg" alt="Governor" className="message-image" />
-          </div>
+          
 
           {/* President's Message */}
           <div className="message-card">
@@ -70,7 +60,7 @@ const WelcomeVision = () => {
               </p>
               <Link to="/about/director-message" className="read-more-btn">Read More</Link>
             </div>
-            <img src="/images/1.jpg" alt="Director" className="message-image" />
+            <img src="/images/S9.jpeg" alt="Director" className="message-image" />
           </div>
 
           {/* Principal's Message */}
@@ -82,7 +72,7 @@ const WelcomeVision = () => {
               </p>
               <Link to="/about/principal-message" className="read-more-btn">Read More</Link>
             </div>
-            <img src="/images/1.jpg" alt="Principal" className="message-image" />
+            <img src="/images/S9.jpeg" alt="Principal" className="message-image" />
           </div>
         </div>
       </section>
