@@ -17,24 +17,24 @@ const ContactComponent = () => {
           <div className="info-item">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
             <div>
-              GURUKUL KURUKSHETRA<br />
-              Near III Gate Kurukshetra,<br />
-              University Kurukshetra,<br />
-              Haryana 136119
+              वृद्धि आर्ष गुरुकुल विद्यापीठ<br />
+              साम्भली- निसिंग रोड, साम्भली,<br />
+              करनाल, हरियाणा<br />
+              
             </div>
           </div>
 
           <div className="info-item">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <div>gurukul_kkr@yahoo.com</div>
+            <div>vriddhiarshgurukul@gmail.com</div>
           </div>
 
           <div className="info-item">
             <FontAwesomeIcon icon={faPhone} className="icon" />
             <div>
-              +91-9996026311<br />
-              01744-238048<br />
-              01744-238648
+              +91-9871501658, <br />
+              9667136238<br />
+             
             </div>
           </div>
 

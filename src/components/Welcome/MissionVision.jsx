@@ -40,7 +40,7 @@ const WelcomeVision = () => {
           
 
           {/* President's Message */}
-          <div className="message-card">
+          {/* <div className="message-card">
             <div className="message-content">
               <h3>PRESIDENTS MESSAGE</h3>
               <p>
@@ -49,7 +49,7 @@ const WelcomeVision = () => {
               <Link to="/about/president-message" className="read-more-btn">Read More</Link>
             </div>
             <img src="/images/1.jpg" alt="President" className="message-image" />
-          </div>
+          </div> */}
 
           {/* Director's Message */}
           <div className="message-card">
